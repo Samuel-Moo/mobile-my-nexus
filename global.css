@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   Electric Clarity design tokens
+   Concept C · Compact Index variant
+   ───────────────────────────────────────────── */
+
+:root {
+  /* Neutrals — Light */
+  --color-bg:          255 255 255;   /* #ffffff */
+  --color-surface:     250 250 250;   /* #fafafa */
+  --color-surface-alt: 240 240 242;   /* #f0f0f2 */
+  --color-border:      229 229 232;   /* #e5e5e8 */
+  --color-muted:       110 110 118;   /* #6e6e76 */
+  --color-ink:         10  10  10;    /* #0a0a0a */
+
+  /* Tab accents — Light */
+  --color-finance:     168 66  61;    /* #a8423d — Terracotta      */
+  --color-calendar:    28  78  158;   /* #1c4e9e — Atlas blue      */
+  --color-goals:       240 140 0;     /* #f08c00 — Marker amber    */
+  --color-write:       95  61  196;   /* #5f3dc4 — Ink violet      */
+  --color-health:      47  143 77;    /* #2f8f4d — Forest moss     */
+  --color-settings:    73  80  87;    /* #495057 — Wet slate       */
+
+  /* Semantic */
+  --color-danger:      168 66  61;    /* mirrors finance */
+  --color-good:        47  143 77;    /* mirrors health  */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Neutrals — Dark */
+    --color-bg:          10  10  11;    /* #0a0a0b */
+    --color-surface:     22  22  24;    /* #161618 */
+    --color-surface-alt: 31  31  35;    /* #1f1f23 */
+    --color-border:      42  42  46;    /* #2a2a2e */
+    --color-muted:       152 152 159;   /* #98989f */
+    --color-ink:         245 245 247;   /* #f5f5f7 */
+
+    /* Tab accents — Dark (one stop brighter for WCAG AA) */
+    --color-finance:     232 122 122;   /* #e87a7a */
+    --color-calendar:    110 168 254;   /* #6ea8fe */
+    --color-goals:       255 212 59;    /* #ffd43b */
+    --color-write:       151 117 250;   /* #9775fa */
+    --color-health:      58  210 159;   /* #3ad29f */
+    --color-settings:    173 181 189;   /* #adb5bd */
+
+    /* Semantic */
+    --color-danger:      232 122 122;
+    --color-good:        58  210 159;
+  }
+}
