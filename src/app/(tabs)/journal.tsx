@@ -1,12 +1,25 @@
 import { Text, View } from 'react-native';
-import "../../../global.css";
+import { useNavContext } from '../../navigation/NavContext';
+import { NavShell } from '../../navigation/NavShell';
 
-export default function App() {
+const SUBS = ['Documents', 'Books', 'Prompts', 'Voice', 'OCR'];
+
+function WriteContent() {
+  const { subsByTab } = useNavContext();
+  const sub = subsByTab['write'];
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
-        This will be the journal tab
+    <View className="flex-1 items-center justify-center">
+      <Text className="font-mono text-chrome uppercase tracking-chrome text-muted">
+        {SUBS[sub]}
       </Text>
     </View>
+  );
+}
+
+export default function JournalScreen() {
+  return (
+    <NavShell tabId="write">
+      <WriteContent />
+    </NavShell>
   );
 }

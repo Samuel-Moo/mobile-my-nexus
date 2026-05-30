@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -47,6 +48,7 @@ module.exports = {
         'h2':       [30, { lineHeight: 30 }],
         'h1':       [42, { lineHeight: 42 }],
         'display':  [72, { lineHeight: 68 }],
+        'chrome':   ['10.5px', { lineHeight: '16px' }], // nav breadcrumb / chips
       },
 
       letterSpacing: {
@@ -59,6 +61,9 @@ module.exports = {
         widest:   '0.12em',   // buttons, chips
         ultra:    '0.16em',   // h5, caption, toc
         max:      '0.20em',   // section headings
+        // Nav chrome tokens (px, pre-converted from em @ specified font sizes)
+        chrome: '1.05px',  // 0.1em @ 10.5px — breadcrumb, chips
+        head:   '0.84px',  // 0.08em @ 10.5px — heading tracking
       },
 
       borderRadius: {
@@ -70,6 +75,10 @@ module.exports = {
         lg:   18,
         xl:   24,
         full: 9999,
+        // Nav shell tokens
+        card: '4px',
+        fab:  '6px',
+        dot:  '2px',
       },
     },
   },

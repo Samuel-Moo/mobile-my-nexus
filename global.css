@@ -29,26 +29,24 @@
   --color-good:        47  143 77;    /* mirrors health  */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Neutrals — Dark */
-    --color-bg:          10  10  11;    /* #0a0a0b */
-    --color-surface:     22  22  24;    /* #161618 */
-    --color-surface-alt: 31  31  35;    /* #1f1f23 */
-    --color-border:      42  42  46;    /* #2a2a2e */
-    --color-muted:       152 152 159;   /* #98989f */
-    --color-ink:         245 245 247;   /* #f5f5f7 */
+.dark {
+  /* Neutrals — Dark */
+  --color-bg:          10  10  11;    /* #0a0a0b */
+  --color-surface:     22  22  24;    /* #161618 */
+  --color-surface-alt: 31  31  35;    /* #1f1f23 */
+  --color-border:      42  42  46;    /* #2a2a2e */
+  --color-muted:       152 152 159;   /* #98989f */
+  --color-ink:         245 245 247;   /* #f5f5f7 */
 
-    /* Tab accents — Dark (one stop brighter for WCAG AA) */
-    --color-finance:     232 122 122;   /* #e87a7a */
-    --color-calendar:    110 168 254;   /* #6ea8fe */
-    --color-goals:       255 212 59;    /* #ffd43b */
-    --color-write:       151 117 250;   /* #9775fa */
-    --color-health:      58  210 159;   /* #3ad29f */
-    --color-settings:    173 181 189;   /* #adb5bd */
+  /* Tab accents — Dark (one stop brighter for WCAG AA) */
+  --color-finance:     232 122 122;   /* #e87a7a */
+  --color-calendar:    110 168 254;   /* #6ea8fe */
+  --color-goals:       255 212 59;    /* #ffd43b */
+  --color-write:       151 117 250;   /* #9775fa */
+  --color-health:      58  210 159;   /* #3ad29f */
+  --color-settings:    173 181 189;   /* #adb5bd */
 
-    /* Semantic */
-    --color-danger:      232 122 122;
-    --color-good:        58  210 159;
-  }
+  /* Semantic */
+  --color-danger:      232 122 122;
+  --color-good:        58  210 159;
 }
