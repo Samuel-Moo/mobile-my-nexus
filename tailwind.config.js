@@ -6,16 +6,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // --- Electric Clarity neutrals (auto-switch via CSS vars in global.css) ---
+        // --- Nothing mono neutrals ---
         bg:           'rgb(var(--color-bg) / <alpha-value>)',
         surface:      'rgb(var(--color-surface) / <alpha-value>)',
         'surface-alt':'rgb(var(--color-surface-alt) / <alpha-value>)',
         border:       'rgb(var(--color-border) / <alpha-value>)',
+        line:         'rgb(var(--color-line) / <alpha-value>)',
         muted:        'rgb(var(--color-muted) / <alpha-value>)',
+        dim:          'rgb(var(--color-dim) / <alpha-value>)',
+        faint:        'rgb(var(--color-faint) / <alpha-value>)',
         ink:          'rgb(var(--color-ink) / <alpha-value>)',
+        'dot-off':    'rgb(var(--color-dot-off) / <alpha-value>)',
+        accent:       'rgb(var(--color-accent) / <alpha-value>)',
+        'on-accent':  'rgb(var(--color-on-accent) / <alpha-value>)',
 
-        // --- Tab accents (auto-switch light → dark) ---
-        // Usage: text-finance, bg-finance, bg-finance/10 (wash)
+        // --- Tab accents (all red in Nothing edition) ---
         finance:  'rgb(var(--color-finance) / <alpha-value>)',
         calendar: 'rgb(var(--color-calendar) / <alpha-value>)',
         goals:    'rgb(var(--color-goals) / <alpha-value>)',
